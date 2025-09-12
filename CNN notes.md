@@ -25,11 +25,10 @@ In addition to length and width, kernels can have depth too. If an input image h
 
 An output of a kernel is a **feature map**. This shows specific features that were detected in the input image. Each kernel uses a different filter to detect a certain feature, so one may produce a feature map that highlights the edges in an image. 
 
-In a CNN, multiple kernels of multiple types are used, with each extracting a specific feature of an image. 
-
 ## What is a convolutional layer?
-Convolutional layers are the main building blocks of a CNN. They each have a  filter / kernel of a certain type. They also have a set stride size, as well as padding, which is the process of adding extra pixels around an image to preserve its spatial dimensions during convolution.
+Convolutional layers are the main building blocks of a CNN. They each have a  filter / kernel of a certain type, which each extracts a specific feature of an image. They also have a set stride size, as well as padding, which is the process of adding extra pixels around an image to preserve its spatial dimensions during convolution.
 
 Unlike the hidden layers in an ANN, the neurons in a convolutional layer aren't fully connected with one another. Rather, they're **locally connected** with a small amount of neurons. This is necessary since images can be very large, and a standard ANN would take too much processing power and probably blow up your computer. 
 
 After running the input through all the convolution and pooling layers, the final stage is to run it through fully connected hidden layers, similar to those found in standard ANNs. 
+
