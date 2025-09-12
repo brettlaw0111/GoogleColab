@@ -28,6 +28,8 @@ An output of a kernel is a **feature map**. This shows specific features that we
 In a CNN, multiple kernels of multiple types are used, with each extracting a specific feature of an image. 
 
 ## What is a convolutional layer?
-Unlike an ANN, the neurons in a CNN aren't fully connected with one another. Rather, they're **locally connected** with a small amount of neurons. This is necessary since images can be very large, and a standard ANN would take too much processing power and probably blow up your computer. 
+Convolutional layers are the main building blocks of a CNN. They each have a  filter / kernel of a certain type. They also have a set stride size, as well as padding, which is the process of adding extra pixels around an image to preserve its spatial dimensions during convolution.
+
+Unlike the hidden layers in an ANN, the neurons in a convolutional layer aren't fully connected with one another. Rather, they're **locally connected** with a small amount of neurons. This is necessary since images can be very large, and a standard ANN would take too much processing power and probably blow up your computer. 
 
 After running the input through all the convolution and pooling layers, the final stage is to run it through fully connected hidden layers, similar to those found in standard ANNs. 
